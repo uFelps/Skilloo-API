@@ -57,12 +57,12 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(org.springframework.security.core.AuthenticationException.class)
     public ResponseEntity<StandardError> unauthorized(AuthenticationException e, HttpServletRequest request){
 
-        HttpStatus status = HttpStatus.UNAUTHORIZED;
+        HttpStatus status = HttpStatus.FORBIDDEN;
 
         StandardError error = new StandardError();
         error.setTimestamp(Instant.now());
         error.setStatus(status.value());
-        error.setError("UNAUTHORIZED");
+        error.setError("FORBIDDEN");
         error.setMessage(e.getMessage());
         error.setPath(request.getRequestURI());
 
@@ -147,7 +147,21 @@ public class ControllerExceptionHandler {
         return ResponseEntity.status(status).body(error);
     }
 
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ResponseEntity<StandardError> dataIntegrity(DataIntegrityViolationException e, HttpServletRequest request){
 
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+
+        StandardError error = new StandardError();
+        error.setTimestamp(Instant.now());
+        error.setStatus(status.value());
+        error.setError("Data Integrity Violation Exception");
+        error.setMessage(e.getMessage());
+        error.setPath(request.getRequestURI());
+
+
+        return ResponseEntity.status(status).body(error);
+    }
 
     @ExceptionHandler(TokenException.class)
     public ResponseEntity<StandardError> validation(TokenException e, HttpServletRequest request){

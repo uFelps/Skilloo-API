@@ -4,6 +4,7 @@ import com.skilloo.api.dto.lab.LabReservaDTO;
 import com.skilloo.api.entities.Aula;
 import com.skilloo.api.entities.Lab;
 import com.skilloo.api.entities.Reserva;
+import com.skilloo.api.entities.User;
 import com.skilloo.api.repositories.AulaRepository;
 import com.skilloo.api.repositories.LabRepository;
 import com.skilloo.api.repositories.ReservaRepository;
@@ -17,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -46,6 +48,7 @@ public class ReservaService {
 
         //para cada lab reservado
         for (Object[] obj : query){
+            System.out.println(Arrays.toString(obj));
             Long idLab = (Long) obj[0];
             String nomeLab = (String) obj[1];
             Long idReserva = (Long) obj[2];
@@ -109,8 +112,15 @@ public class ReservaService {
             throw new DataNotFoundException("Id not Found: " + idReserva);
         }
 
+        boolean isAutor = false;
+        for (User user : entity.get().getAula().getProfessores()){
+            if (Objects.equals(user.getId(), idUser)) {
+                isAutor = true;
+                break;
+            }
+        }
 
-        if (!Objects.equals(entity.get().getAula().getProfessor().getId(), idUser)){
+        if (!isAutor){
             throw new ForbiddenException("Vocẽ não pode cancelar uma reserva que não seja de sua autoria.");
         }
 

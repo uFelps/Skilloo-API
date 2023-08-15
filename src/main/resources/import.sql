@@ -88,35 +88,66 @@ INSERT INTO materia (nome, area) VALUES ('Internet, Protocolos, Sistemas de Segu
 
 
 
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'MONDAY', '09:50:00', 2, 8);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'MONDAY', '10:40:00', 2, 8);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'MONDAY', '11:30:00', 2, 8);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '07:00:00', 2, 1);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '07:50:00', 2, 1);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '08:40:00', 2, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '09:50:00', 2, 3);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '10:40:00', 2, 5);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'TUESDAY', '11:30:00', 2, 3);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'WEDNESDAY', '07:00:00', 2, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(39, 'WEDNESDAY', '07:50:00', 31, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(39, 'WEDNESDAY', '08:40:00', 31, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'WEDNESDAY', '08:40:00', 2, 4);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'WEDNESDAY', '09:50:00', 2, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'WEDNESDAY', '10:40:00', 2, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(1, 'WEDNESDAY', '11:30:00', 2, 9);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'THURSDAY', '08:40:00', 2, 5);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'THURSDAY', '09:50:00', 2, 1);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'THURSDAY', '10:40:00', 2, 4);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'FRIDAY', '08:40:00', 2, 4);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'FRIDAY', '09:50:00', 2, 3);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(2, 'FRIDAY', '11:30:00', 2, 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'MONDAY', '09:50:00', 8);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'MONDAY', '10:40:00', 8);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'MONDAY', '11:30:00', 8);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '07:00:00', 1);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '07:50:00', 1);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '08:40:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '09:50:00', 3);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '10:40:00', 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'TUESDAY', '11:30:00', 3);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'WEDNESDAY', '07:00:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(39, 'WEDNESDAY', '07:50:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(39, 'WEDNESDAY', '08:40:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'WEDNESDAY', '08:40:00', 4);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'WEDNESDAY', '09:50:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'WEDNESDAY', '10:40:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(1, 'WEDNESDAY', '11:30:00', 9);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'THURSDAY', '08:40:00', 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'THURSDAY', '09:50:00', 1);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'THURSDAY', '10:40:00', 4);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'FRIDAY', '08:40:00', 4);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'FRIDAY', '09:50:00', 3);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(2, 'FRIDAY', '11:30:00', 5);
 
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(3, 'FRIDAY', '10:40:00', 3, 6);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(4, 'FRIDAY', '11:30:00', 3, 7);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(3, 'FRIDAY', '10:40:00', 6);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(4, 'FRIDAY', '11:30:00', 7);
 
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(5, 'WEDNESDAY', '09:50:00', 4, 5);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(5, 'WEDNESDAY', '10:40:00', 4, 5);
-INSERT INTO aula(materia, dia, horario, professor, turma) VALUES(5, 'WEDNESDAY', '11:30:00', 4, 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(5, 'WEDNESDAY', '09:50:00', 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(5, 'WEDNESDAY', '10:40:00', 5);
+INSERT INTO aula(materia, dia, horario, turma) VALUES(5, 'WEDNESDAY', '11:30:00', 5);
+
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(1, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(2, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(3, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(4, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(5, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(6, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(7, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(8, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(9, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(10, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(11, 31);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(12, 31);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(13, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(14, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(14, 31);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(15, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(15, 31);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(16, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(16, 31);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(17, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(18, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(19, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(20, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(21, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(22, 2);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(23, 3);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(24, 3);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(25, 4);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(26, 4);
+INSERT INTO aula_professores(aula_id, professor_id) VALUES(27, 4);
 
 --completando as aulas do 3º DS-B - QUARTA
 
@@ -156,16 +187,16 @@ INSERT INTO task(titulo, prazo, anotacao, status, autor) VALUES('Trocar Ryzen do
 INSERT INTO task(titulo, prazo, anotacao, status, autor) VALUES('Corrigir atv do Tinkercad', '2023-03-30 13:00:00', 'Atv do Serial Monitor', 'DONE', 3);
 
 -- TCC 3º DS B
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(12,'09:50:00', 'WEDNESDAY', 3);
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(13,'10:40:00', 'WEDNESDAY', 3);
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(14,'11:30:00', 'WEDNESDAY', 3);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(14,'09:50:00', 'WEDNESDAY', 3);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(15,'10:40:00', 'WEDNESDAY', 3);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(16,'11:30:00', 'WEDNESDAY', 3);
 
 --AULA DO ALEXANDRE - BANCO DE DADOS(2DS A) E DS (2DSB)
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(21,'10:40:00', 'FRIDAY', 2);
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(22,'11:30:00', 'FRIDAY', 1);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(23,'10:40:00', 'FRIDAY', 2);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(24,'11:30:00', 'FRIDAY', 1);
 
 
 --AULA TONTON 1DSB
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(23,'09:50:00', 'WEDNESDAY', 2);
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(24,'10:40:00', 'WEDNESDAY', 2);
-INSERT INTO reserva(aula, horario, dia, lab) VALUES(25,'11:30:00', 'WEDNESDAY', 2);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(25,'09:50:00', 'WEDNESDAY', 2);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(26,'10:40:00', 'WEDNESDAY', 2);
+INSERT INTO reserva(aula, horario, dia, lab) VALUES(27,'11:30:00', 'WEDNESDAY', 2);

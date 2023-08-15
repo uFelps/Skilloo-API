@@ -43,13 +43,13 @@ public class User implements UserDetails {
     private Contrato contrato;
 
     //relações
-    @OneToMany(mappedBy = "professor")
+    @ManyToMany(mappedBy = "professores")
     private List<Aula> aulas = new ArrayList<>();
 
-    @OneToMany(mappedBy = "professor")
+    @OneToMany(mappedBy = "professor", cascade = CascadeType.ALL)
     private List<TicketSuporte> tickets = new ArrayList<>();
 
-    @OneToMany(mappedBy = "autor")
+    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL)
     private List<Task> tasks = new ArrayList<>();
 
 
